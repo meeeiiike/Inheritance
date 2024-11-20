@@ -1,19 +1,16 @@
 package ie.atu.week8;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Customer part1Customer = new Customer("Mike", "ATU", "04493", "123ATU", true);
+        System.out.println(part1Customer);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Customer part2Customer = new Customer();
+        part2Customer.setName("Not Mike");
+        part2Customer.setAddress("Not ATU");
+        part2Customer.setPhone("Not 04493");
+        part2Customer.setCustomerNum("Not 123ATU");
+        part2Customer.setMailingList(true);
+        System.out.println(part2Customer);
     }
 }
