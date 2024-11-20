@@ -11,11 +11,16 @@ public class Person {
         this.phone = phone;
     }
 
+    public Person() {
+        name = "";
+        address = "";
+        phone = "";
+    }
+
     @Override
     public String toString() {
         return "name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
+                ", phone='" + phone + '\'';
     }
 }
