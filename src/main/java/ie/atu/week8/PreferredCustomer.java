@@ -23,15 +23,15 @@ public class PreferredCustomer extends Customer{
         this.loyaltyPoints += loyaltyPoints;
         if(this.loyaltyPoints>=500&&this.loyaltyPoints<1000)
         {
-            this.discountLevel = 5;
-        } else if (this.loyaltyPoints>=1000&&this.loyaltyPoints<1500) {
-            this.discountLevel = 6;
+            discountLevel = 5;
+        }else if (this.loyaltyPoints>=1000&&this.loyaltyPoints<1500) {
+            discountLevel = 6;
         }else if (this.loyaltyPoints>=1500&&this.loyaltyPoints<2000) {
-            this.discountLevel = 7;
+            discountLevel = 7;
         }else if (this.loyaltyPoints>=2000){
-            this.discountLevel = 10;
-        } else {
-            this.discountLevel = 0;
+            discountLevel = 10;
+        }else {
+            discountLevel = 0;
         }
     }
 
