@@ -16,6 +16,5 @@ public class Main {
         System.out.println(part2Customer.getPhone());
         System.out.println(part2Customer.getCustomerNum());
         System.out.println(part2Customer.isMailingList());
-
     }
 }
