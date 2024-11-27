@@ -11,6 +11,11 @@ public class Main {
         part2Customer.setPhone("Not 04493");
         part2Customer.setCustomerNum("Not 123ATU");
         part2Customer.setMailingList(true);
-        System.out.println(part2Customer);
+        System.out.println(part2Customer.getName());
+        System.out.println(part2Customer.getAddress());
+        System.out.println(part2Customer.getPhone());
+        System.out.println(part2Customer.getCustomerNum());
+        System.out.println(part2Customer.isMailingList());
+
     }
 }
